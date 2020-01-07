@@ -25,13 +25,13 @@ The entire API of the library has changed so you need to make some adjustments w
 ## How it works
 
 ### Windows
-The mouse and keyboard hook are set using [SetWindowsHook](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa). When using the Listen method of the InputSource class a thread is created which is used to receive the messages / events. After the hooks are set a custom message loop is started which receives windows messages.
+The mouse and keyboard hook are set using [SetWindowsHook](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowshookexa). When using the `Listen` method of the `InputSource` class a dedicated thread is created which is used to receive the input events. After the hooks are set a custom message loop is started which receives windows messages.
 
 ### Linux
 Currently linux is not supported. This section will follow when the project has a implementation.
 
 ## Documentation
-The documentation can be found in the [wiki](https://github.com/LegendaryB/NeatInput/wiki).
+Further documentation can be found in the [wiki](https://github.com/LegendaryB/NeatInput/wiki).
 
 ## Contributing
 
