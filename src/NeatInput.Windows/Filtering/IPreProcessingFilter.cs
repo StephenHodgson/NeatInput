@@ -2,5 +2,6 @@
 {
     public interface IPreProcessingFilter
     {
+        bool PreFilterMessage(HookRawInput hookRawInput);
     }
 }
